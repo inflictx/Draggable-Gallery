@@ -6,7 +6,7 @@
 
 :root {
   --gap: 0.5em;
-  --index: calc(1vw + 1vh);
+  --index: calc(1vw + 1vh); 
   --color-dark: #000;
 }
 
