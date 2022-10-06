@@ -39,18 +39,18 @@ body {
 }
 
 .gallery {
+  will-change: transform;
   width: 30vw;
   column-width: 2em;
   gap: var(--gap);
   transform: scale(8);
   transition: 1s cubic-bezier(0.075, 1, 0.25, 1), opacity 1s;
-  will-change: contents;
 }
 
 .gallery__item {
   margin-bottom: var(--gap);
   transform: scale(1.001);
-  will-change: contents;
+  will-change: transform;
   transition: 0.3s;
 }
 
