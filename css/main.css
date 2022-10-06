@@ -19,6 +19,7 @@ body {
 }
 
 .header {
+  margin-top: 0.2em;
   text-transform: uppercase;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -26,4 +27,13 @@ body {
   font-size: calc(var(--index) * 2);
   position: absolute;
   font-weight: 200;
+  text-align: center;
+  opacity: 0.9;
+}
+
+.header span {
+  display: block;
+  font-family: Helvetica, sans-serif;
+  font-size: calc(var(--index) * 1);
+  margin-top: 5px;
 }
