@@ -42,12 +42,14 @@ body {
   width: 30vw;
   column-width: 2em;
   gap: var(--gap);
-  transform: scale(8.3);
+  transform: scale(8);
+  transition: 1s cubic-bezier(0.075, 1, 0.25, 1);
+  will-change: contents;
 }
 
 .gallery__item {
   margin-bottom: var(--gap);
-  transform: scale(1.001); /* убирает blur и нужная форма. */
+  transform: scale(1.001);
 }
 
 .gallery_img {
