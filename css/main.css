@@ -43,15 +43,41 @@ body {
   column-width: 2em;
   gap: var(--gap);
   transform: scale(8);
-  transition: 1s cubic-bezier(0.075, 1, 0.25, 1);
-  will-change: contents;
+  transition: 1s cubic-bezier(0.075, 1, 0.25, 1), opacity 1s;
+  will-change: transform;
 }
 
 .gallery__item {
   margin-bottom: var(--gap);
   transform: scale(1.001);
+  will-change: transform;
+  transition: 0.3s;
+}
+
+.gallery__item:hover {
+  transform: scale(1.1);
 }
 
 .gallery_img {
   width: 100%;
+  display: block;
+}
+
+.loaded .gallery {
+  opacity: 1;
+}
+
+.loaded .header__load {
+  opacity: 0;
+}
+
+/* dark mode */
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--color-dark);
+  }
+  .header {
+    filter: invert(100%);
+  }
 }
